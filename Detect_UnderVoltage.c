@@ -3,7 +3,7 @@
 
 bool UnderVoltage(float Voltage,int time)
 {
- if(Voltage<10.0 && time==100)
+ if(Voltage<K_UV_MAX && time==20)
  {
    return 1; 
  }
