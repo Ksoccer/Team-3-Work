@@ -16,7 +16,7 @@ bool UnderVoltage(int PHA_V,int PHB_V,int PHC_V, int time)
        PHUV = PHC_V;
     }
  
- if(PHUV<K_UV_MIN && time==20)
+ if(PHUV<K_UV_MAX && time==20)
  {
    return = 1; 
  } 
