@@ -6,13 +6,13 @@ int main()
   int time;
   bool OverCurrentFault,OverVoltageFault,UnderCurrentFault,UnderVoltageFault,OverFrequencyFault;
   
-  printf("Enter Current")
+  printf("Enter Current");
   scanf("%d",&Current);
-  printf("Enter Voltage")
+  printf("Enter Voltage");
   scanf("%d",&Voltage);
-  printf("Enter Frequency")
+  printf("Enter Frequency");
   scanf("%d",&Frequency);
-   printf("Enter time")
+   printf("Enter time");
   scanf("%d",&time);
   
   //Invoke fault functions
