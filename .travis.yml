@@ -10,5 +10,10 @@ install:
 
 script:
   - echo "Reached Script Section"
-  - gcc  -I CUnit/ Having-Fun-With-C-and-CI.c  	 -o output
+  - gcc  Nithin.c Detect_UnderVoltage.c -o output
   - ./output
+  
+ cunit:
+  - echo "Reached Script Section"
+  - gcc  -I CUnit/Headers CUnit/Sources/Framework/*.c CUnit/Sources/Basic/Basic.c Nithin.c Detect_UnderVoltage.c  Detect_UnderVoltage_cunit.c -o Nithin_test
+  - ./Nithin_test
