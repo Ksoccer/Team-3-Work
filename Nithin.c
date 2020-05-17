@@ -1,10 +1,11 @@
 #include<stdio.h>
+#include<stdbool.h>
 
 int main()
 {
   float Current,Voltage,Frequency;
   int time;
-  boolean OverCurrentFault,OverVoltageFault,UnderCurrentFault,UnderVoltageFault,OverFrequencyFault;
+  bool OverCurrentFault,OverVoltageFault,UnderCurrentFault,UnderVoltageFault,OverFrequencyFault;
   
   printf("Enter Current");
   scanf("%d",&Current);
