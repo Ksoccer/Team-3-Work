@@ -8,11 +8,14 @@ int main()
   printf("Enter Current")
   scanf("%d",&Current);
   printf("Enter Voltage")
-  scanf("%d",&Current);
+  scanf("%d",&Voltage);
   printf("Enter Frequency")
   scanf("%d",&Frequency);
+   printf("Enter time")
+  scanf("%d",&time);
   
   //Invoke fault functions
+  UnderVoltageFault = UnderVoltage(Voltage,time);
   
   if(OverCurrentFault)
   {	
