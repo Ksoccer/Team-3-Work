@@ -3,6 +3,7 @@
 int main()
 {
   float Current,Voltage,Frequency;
+  int time;
   bool OverCurrentFault,OverVoltageFault,UnderCurrentFault,UnderVoltageFault,OverFrequencyFault;
   
   printf("Enter Current")
