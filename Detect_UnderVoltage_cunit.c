@@ -2,11 +2,6 @@
 #include <CUnit/Basic.h>
 #include "Faults.h"
 
-int maxi(int i1, int i2)
-{
-    return (i1 > i2) ? i1 : i2;
-}
-
 void test_UnderVoltage(void)
 {
     CU_ASSERT(UnderVoltage(9.0,20) == 1);
