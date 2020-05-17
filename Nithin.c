@@ -4,7 +4,7 @@ int main()
 {
   float Current,Voltage,Frequency;
   int time;
-  bool OverCurrentFault,OverVoltageFault,UnderCurrentFault,UnderVoltageFault,OverFrequencyFault;
+  boolean OverCurrentFault,OverVoltageFault,UnderCurrentFault,UnderVoltageFault,OverFrequencyFault;
   
   printf("Enter Current");
   scanf("%d",&Current);
