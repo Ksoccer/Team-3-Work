@@ -8,11 +8,11 @@ int main()
   bool OverCurrentFault,OverVoltageFault,UnderCurrentFault,UnderVoltageFault,OverFrequencyFault;
   
   printf("Enter Current");
-  scanf("%d",&Current);
+  scanf("%f",&Current);
   printf("Enter Voltage");
-  scanf("%d",&Voltage);
+  scanf("%f",&Voltage);
   printf("Enter Frequency");
-  scanf("%d",&Frequency);
+  scanf("%f",&Frequency);
    printf("Enter time");
   scanf("%d",&time);
   
