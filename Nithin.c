@@ -3,7 +3,7 @@
 int main()
 {
   float Current,Voltage,Frequency;
-  char OverCurrentFault,OverVoltageFault,UnderCurrentFault,UnderVoltageFault,OverFrequencyFault;
+  bool OverCurrentFault,OverVoltageFault,UnderCurrentFault,UnderVoltageFault,OverFrequencyFault;
   
   printf("Enter Current")
   scanf("%d",&Current);
@@ -13,6 +13,7 @@ int main()
   scanf("%d",&Frequency);
   
   //Invoke fault functions
+  
   if(OverCurrentFault)
   {	
     printf("OC Fault");
