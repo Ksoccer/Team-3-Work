@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "Faults.h"
 
-bool UnderVoltage(int voltage, int time)
+bool UnderVoltage(float voltage, int time)
 {
 
  if(voltage<K_UV_MAX && time==20)
