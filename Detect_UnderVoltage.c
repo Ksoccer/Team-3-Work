@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "Faults.h"
+#include <stdbool.h>
 
 bool UnderVoltage(float voltage, int time)
 {
