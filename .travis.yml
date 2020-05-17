@@ -10,5 +10,5 @@ install:
 
 script:
   - echo "Reached Script Section"
-  - gcc   Having-Fun-With-C-and-CI.c 	 -o output
+  - gcc  -I CUnit/ Having-Fun-With-C-and-CI.c  	 -o output
   - ./output
