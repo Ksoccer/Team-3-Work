@@ -26,19 +26,19 @@ int main()
   }
   if(OverVoltageFault)
   {	
-    printf("OC Fault");
+    printf("OV Fault");
   }
   if(UnderCurrentFault)
   {	
-    printf("OC Fault");
+    printf("UC Fault");
   }
   if(UnderVoltageFault)
   {	
-    printf("OC Fault");
+    printf("UV Fault");
   }
-  if(OverCurrentFault)
+  if(OverFrquencyFault)
   {	
-    printf("OC Fault");
+    printf("OF Fault");
   }
    
   return 0;
