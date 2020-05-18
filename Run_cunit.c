@@ -22,6 +22,13 @@ void test_OverCurrent(void)
     CU_ASSERT(OverCurrent(11,19) == 0);
 }*/
 
+/*
+void test_OverVoltage(void)
+{
+    CU_ASSERT(OverVoltage(16,20) == 1);
+    CU_ASSERT(OverVoltage(10,20) == 0);
+    CU_ASSERT(OverVoltage(16,19) == 0);
+}*/
 
 
 int main()
@@ -38,6 +45,10 @@ int main()
 	/*CU_pSuite suite3 = CU_add_suite("test_OverCurrent", 0, 0);
 
     CU_add_test(suite3, "test_OverCurrent", test_OverCurrent);*/
+	
+	/*CU_pSuite suite4 = CU_add_suite("test_OverVoltage", 0, 0);
+
+    CU_add_test(suite4, "test_OverVoltage", test_OverVoltage);*/
 
 
     CU_basic_set_mode(CU_BRM_VERBOSE);
