@@ -4,9 +4,9 @@
 
 void test_UnderVoltage(void)
 {
-    CU_ASSERT(UnderVoltage(9.0,20) == 1);
-    CU_ASSERT(UnderVoltage(10.0,20) == 0);
-    CU_ASSERT(UnderVoltage(9.0,19) == 0);
+    CU_ASSERT(UnderVoltage(4.0,20) == 1);
+    CU_ASSERT(UnderVoltage(5.0,20) == 0);
+    CU_ASSERT(UnderVoltage(4.0,19) == 0);
 }
 
 int main()
