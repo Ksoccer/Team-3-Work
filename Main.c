@@ -19,6 +19,7 @@ int main()
   printf("enter values");
   //Invoke fault functions
   UnderVoltageFault = UnderVoltage(Voltage,time);
+  OverCurrentFault = Over_Current(Current, time);
   
   if(OverCurrentFault)
   {	
