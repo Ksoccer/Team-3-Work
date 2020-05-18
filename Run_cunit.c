@@ -14,6 +14,16 @@ void test_UnderFrequency(void)
     CU_ASSERT(UnderFrequency(350.0,20) == 0);
     CU_ASSERT(UnderFrequency(340.0,19) == 0);
 }
+
+void test_OverCurrent(void)
+{
+    CU_ASSERT(OverCurrent(11,20) == 1);
+    CU_ASSERT(OverCurrent(10,20) == 0);
+    CU_ASSERT(OverCurrent(11,19) == 0);
+}
+
+
+
 int main()
 {
     CU_initialize_registry();
@@ -24,6 +34,11 @@ int main()
 	CU_pSuite suite2 = CU_add_suite("test_UnderFrequency", 0, 0);
 
     CU_add_test(suite2, "test_UnderFrequency", test_UnderVoltage);
+	
+	/*CU_pSuite suite3 = CU_add_suite("test_OverCurrent", 0, 0);
+
+    CU_add_test(suite3, "test_OverCurrent", test_OverCurrent);*/
+
 
     CU_basic_set_mode(CU_BRM_VERBOSE);
     CU_basic_run_tests();
