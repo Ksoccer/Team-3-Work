@@ -36,7 +36,7 @@ int main()
   {	
     printf("UV Fault");
   }
-  if(OverFrquencyFault)
+  if(OverFrequencyFault)
   {	
     printf("OF Fault");
   }
