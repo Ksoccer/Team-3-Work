@@ -9,7 +9,7 @@ install:
   - echo  "Reached Install Section"
   
   script:
-  - echo "Reached Script Section"
+  - echo "Reached  Script Section"
   - gcc  Nithin.c Detect_UnderVoltage.c -o output 
   
 
