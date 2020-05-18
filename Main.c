@@ -8,7 +8,7 @@ int main()
   int time=0;
   bool OverCurrentFault,OverVoltageFault,UnderCurrentFault,UnderVoltageFault,OverFrequencyFault,UnderFrequencyFault;
   
-  printf("Enter Current");
+  /*printf("Enter Current");
   scanf("%f",&Current);
   printf("Enter Voltage");
   scanf("%f",&Voltage);
@@ -16,7 +16,7 @@ int main()
   scanf("%f",&Frequency);
   printf("Enter time");
   scanf("%d",&time);
-  printf("enter values");
+  printf("enter values");*/
   //Invoke fault functions
  while(1)
  {	 
