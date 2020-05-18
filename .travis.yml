@@ -13,5 +13,5 @@ script:
   - gcc  Nithin.c Detect_UnderVoltage.c -o output 
   
   - echo "Reached unit Section"
-  - gcc  -I CUnit/Headers CUnit/Sources/Framework/*.c CUnit/Sources/Basic/Basic.c Nithin.c Detect_UnderVoltage.c  Detect_UnderVoltage_cunit.c -o Nithin_test
+  - gcc  -I CUnit/Headers CUnit/Sources/Framework/*.c CUnit/Sources/Basic/Basic.c Detect_UnderVoltage.c  Detect_UnderVoltage_cunit.c -o Nithin_test
 
