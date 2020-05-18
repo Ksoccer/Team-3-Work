@@ -1,5 +1,6 @@
-#include "Faults.h"
+
 #include <stdio.h>
+#include "Faults.h"
 #include <stdbool.h>
 
 bool UnderCurrent(float current, int time)
