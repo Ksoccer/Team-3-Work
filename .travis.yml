@@ -1,0 +1,16 @@
+language: c
+
+compiler:
+  - gcc
+before_install:
+  - sudo apt-get update
+  - sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev
+install:
+  - echo  "Reached Install Section"
+script:
+  - echo "Reached  Script Section"
+  - gcc  Nithin.c Detect_UnderVoltage.c -o output 
+ cunit:
+  - echo "Reached unit Section"
+  - gcc  -I CUnit/Headers CUnit/Sources/Framework/*.c CUnit/Sources/Basic/Basic.c Nithin.c Detect_UnderVoltage.c  Detect_UnderVoltage_cunit.c -o Nithin_test
+  - ./Nithin_test
