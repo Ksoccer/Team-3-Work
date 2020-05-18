@@ -14,13 +14,13 @@ void test_UnderFrequency(void)
     CU_ASSERT(UnderFrequency(350.0,20) == 0);
     CU_ASSERT(UnderFrequency(340.0,19) == 0);
 }
-
+/*
 void test_OverCurrent(void)
 {
     CU_ASSERT(OverCurrent(11,20) == 1);
     CU_ASSERT(OverCurrent(10,20) == 0);
     CU_ASSERT(OverCurrent(11,19) == 0);
-}
+}*/
 
 
 
