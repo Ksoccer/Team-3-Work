@@ -21,9 +21,9 @@ int main()
 
     CU_add_test(suite, "test_UnderVoltage", test_UnderVoltage);
 	
-	CU_pSuite suite = CU_add_suite("test_UnderFrequency", 0, 0);
+	CU_pSuite suite2 = CU_add_suite("test_UnderFrequency", 0, 0);
 
-    CU_add_test(suite, "test_UnderFrequency", test_UnderVoltage);
+    CU_add_test(suite2, "test_UnderFrequency", test_UnderVoltage);
 
     CU_basic_set_mode(CU_BRM_VERBOSE);
     CU_basic_run_tests();
