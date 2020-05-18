@@ -12,4 +12,4 @@ bool UnderVoltage(float voltage,int time);
 bool UnderCurrent(float current,int time);
 bool OverFrequency(float Frequency, int time);
 bool UnderFrequency(float Frequency, int time);
-  
+bool OverCurrent(float current, int time);  
