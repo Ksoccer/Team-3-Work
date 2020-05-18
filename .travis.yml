@@ -14,4 +14,4 @@ script:
 cunit:
   - echo "Reached unit Section"
   - gcc  -I CUnit/Headers CUnit/Sources/Framework/*.c CUnit/Sources/Basic/Basic.c Nithin.c Detect_UnderVoltage.c  Detect_UnderVoltage_cunit.c -o Nithin_test
-  - ./Nithin_tes
+  - ./Nithin_test
