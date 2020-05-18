@@ -33,7 +33,7 @@ int main()
 	
 	CU_pSuite suite2 = CU_add_suite("test_UnderFrequency", 0, 0);
 
-    CU_add_test(suite2, "test_UnderFrequency", test_UnderVoltage);
+    CU_add_test(suite2, "test_UnderFrequency", test_UnderFrequency);
 	
 	/*CU_pSuite suite3 = CU_add_suite("test_OverCurrent", 0, 0);
 
