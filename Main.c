@@ -14,7 +14,7 @@ int main()
   scanf("%f",&Voltage);
   printf("Enter Frequency");
   scanf("%f",&Frequency);
-   printf("Enter time");
+  printf("Enter time");
   scanf("%d",&time);
   printf("enter values");
   //Invoke fault functions
