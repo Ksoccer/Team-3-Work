@@ -2,10 +2,10 @@
 #include "Faults.h"
 #include <stdbool.h>
 
-bool UnderFrequency(float Frequency, int time)
+bool OverFrequency(float Frequency, int time)
 {
 
- if(Frequency<K_UF_MIN && time==20)
+ if(Frequency<K_OF_MIN && time==20)
  {
    return 1; 
  }
