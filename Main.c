@@ -5,8 +5,8 @@
 int main()
 {
   float Current,Voltage,Frequency;
-  int time;
-  bool OverCurrentFault,OverVoltageFault,UnderCurrentFault,UnderVoltageFault,OverFrequencyFault;
+  int time=0;
+  bool OverCurrentFault,OverVoltageFault,UnderCurrentFault,UnderVoltageFault,OverFrequencyFault,UnderFrequencyFault;
   
   printf("Enter Current");
   scanf("%f",&Current);
@@ -18,8 +18,25 @@ int main()
   scanf("%d",&time);
   printf("enter values");
   //Invoke fault functions
+ while(1)
+ {	 
+  if(time < 20)
+  {
+	  time++;
+  }
+  else
+  {
+	  time = 0;
+	  OverCurrentFault = 0;
+	  OverVoltageFault = 0;
+	  UnderCurrentFault = 0;
+	  UnderVoltageFault = 0;
+	  OverFrequencyFault = 0;
+	  UnderFrequencyFault = 0;
+  }
   UnderVoltageFault = UnderVoltage(Voltage,time);
-  OverCurrentFault = Over_Current(Current, time);
+  UnderFrequencyFault = UnderFrequency(Voltage,time);
+  /*OverCurrentFault = Over_Current(Current, time);*/
   
   if(OverCurrentFault)
   {	
@@ -41,7 +58,7 @@ int main()
   {	
     printf("OF Fault");
   }
-   
+ }
   return 0;
 }
 
