@@ -7,4 +7,4 @@
 #define K_UF_MIN 350
 
 bool UnderVoltage(float voltage,int time);
-bool UnderCurrent();
+bool UnderCurrent(float current,int time);
