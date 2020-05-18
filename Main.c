@@ -18,7 +18,7 @@ int main()
   scanf("%d",&time);
   printf("enter values");*/
   //Invoke fault functions
- while(1)
+ /*while(1)
  {	 
   if(time < 20)
   {
@@ -33,7 +33,7 @@ int main()
 	  UnderVoltageFault = 0;
 	  OverFrequencyFault = 0;
 	  UnderFrequencyFault = 0;
-  }
+  }*/
   UnderVoltageFault = UnderVoltage(Voltage,time);
   UnderFrequencyFault = UnderFrequency(Frequency,time);
  // OverFrequencyFault = OverFrequency(Frequency,time);
