@@ -7,10 +7,8 @@ before_install:
   - sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev
 install:
   - echo  "Reached Install Section"
+
 script:
-  - echo "Reached  Script Section"
-  - gcc  Nithin.c Detect_UnderVoltage.c -o output 
- cunit:
-  - echo "Reached unit Section"
-  - gcc  -I CUnit/Headers CUnit/Sources/Framework/*.c CUnit/Sources/Basic/Basic.c Nithin.c Detect_UnderVoltage.c  Detect_UnderVoltage_cunit.c -o Nithin_test
-  - ./Nithin_test
+  - echo "Reached Script Section"
+  - gcc  -I CUnit/Headers CUnit/Sources/Framework/*.c CUnit/Sources/Basic/Basic.c intial_demo_code_cunit.c -o output
+  - ./output
