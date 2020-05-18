@@ -1,4 +1,7 @@
 # Team-3-Work
+[![Build Status](https://travis-ci.com/Ksoccer/Team-3-Work.svg?branch=master)](https://travis-ci.com/Ksoccer/Team-3-Work)
+
+
 Repo for Team 3 L&amp;T
 
 
