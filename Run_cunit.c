@@ -2,18 +2,18 @@
 #include <CUnit/Basic.h>
 #include "Faults.h"
 
-void test_faults(void)
+void test_UnderVoltage(void)
 {
     CU_ASSERT(UnderVoltage(4.0,20) == 1);
     CU_ASSERT(UnderVoltage(5.0,20) == 0);
     CU_ASSERT(UnderVoltage(4.0,19) == 0);
-//}
-//void test_UnderFrequency(void)
-//{
+}
+void test_UnderFrequency(void)
+{
     CU_ASSERT(UnderFrequency(340.0,20) == 1);
     CU_ASSERT(UnderFrequency(350.0,20) == 0);
     CU_ASSERT(UnderFrequency(340.0,19) == 0);
-//}
+}
 /*
 void test_OverCurrent(void)
 {
@@ -31,16 +31,16 @@ void test_OverVoltage(void)
 }*/
 
 
-//int main()
-//{
+int main()
+{
     CU_initialize_registry();
-    CU_pSuite suite = CU_add_suite("test_faults", 0, 0);
+    CU_pSuite suite = CU_add_suite("test_UnderVoltage", 0, 0);
 
-    CU_add_test(suite, "test_faults", test_faults);
+    CU_add_test(suite, "test_UnderVoltage", test_UnderVoltage);
 	
-	CU_pSuite suite2 = CU_add_suite("test_faults", 0, 0);
+	CU_pSuite suite2 = CU_add_suite("test_UnderFrequency", 0, 0);
 
-    CU_add_test(suite2, "test_faults", test_faults);
+    CU_add_test(suite2, "test_UnderFrequency", test_UnderFrequency);
 	
 	/*CU_pSuite suite3 = CU_add_suite("test_OverCurrent", 0, 0);
 
