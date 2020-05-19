@@ -3,9 +3,29 @@
 #include "Faults.h"
 
 void test_UnderVoltage(void)
-{
+{  
+    /********************************
+     TC1
+     Input: Voltage = 4.0, time =20
+     Output: True  
+    
+    *********************************/
     CU_ASSERT(UnderVoltage(4.0,20) == 1);
+	
+    /********************************
+     TC2
+     Input: Voltage = 5.0, time =20
+     Output: False  
+    
+    *********************************/
     CU_ASSERT(UnderVoltage(5.0,20) == 0);
+	
+     /********************************
+     TC3
+     Input: Voltage = 4.0, time =19
+     Output: False  
+    
+    *********************************/
     CU_ASSERT(UnderVoltage(4.0,19) == 0);
 }
 void test_UnderFrequency(void)
