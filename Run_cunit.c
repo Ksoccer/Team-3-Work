@@ -42,13 +42,31 @@ void test_OverCurrent(void)
     CU_ASSERT(OverCurrent(11,19) == 0);
 }*/
 
-/*
-void test_OverVoltage(void)
-{
-    CU_ASSERT(OverVoltage(16,20) == 1);
-    CU_ASSERT(OverVoltage(10,20) == 0);
-    CU_ASSERT(OverVoltage(16,19) == 0);
-}*/
+
+//void test_OverVoltage(void)
+//{
+ /********************************
+     TC1
+     Input: Voltage = 16.0, time =20
+     Output: True 
+    
+    *********************************/
+//    CU_ASSERT(OverVoltage(16,20) == 1);
+ /********************************
+     TC2
+     Input: Voltage = 10.0, time =20
+     Output: False  
+    
+    *********************************/
+//    CU_ASSERT(OverVoltage(10,20) == 0);
+ /********************************
+     TC3
+     Input: Voltage = 16.0, time =19
+     Output: False  
+    
+    *********************************/
+//    CU_ASSERT(OverVoltage(16,19) == 0);
+//}
 
 
 int main()
