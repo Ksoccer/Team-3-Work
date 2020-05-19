@@ -12,13 +12,35 @@ case that set time being 20 seconds
 
 #include <stdlib.h>
 #include <stdbool.h>
+#include <stdio.h>
 #include "Faults.h"
 
-bool OverVoltage(float voltage, int time){
+int *Tpoint;
+float *Vpoint;
+bool *Fpoint;
+
+int time;
+float voltage;
+
+Tpoint = &time;
+Vpoint = &voltage;
+
+bool OverVoltage(voltage, time){
 	if (voltage > K_OV_MAX && time == 20){
 		return 1;
 	}
 	else {
 		return 0;
 	}
+}
+
+Fpoint = &OverVoltage();
+
+int pointers(){
+	
+ 	printf("Address stored in time pointer variable: %x\n", Tpoint );
+	printf("Address stored in voltage pointer variable: %x\n", Vpoint );
+	printf("Address stored in Function pointer variable: %x\n", Fpoint );
+	
+	
 }
