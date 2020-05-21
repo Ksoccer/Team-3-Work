@@ -11,8 +11,10 @@ install:
 script:
   - echo "Reached  Script Section"
   - gcc  Main.c Detect_UnderVoltage.c Detect_UnderFrequency.c -o output 
+  - size output
   
    
   - echo "Reached unit Section"
   - gcc  -I CUnit/Headers CUnit/Sources/Framework/*.c CUnit/Sources/Basic/Basic.c Detect_UnderVoltage.c Detect_UnderFrequency.c Run_cunit.c -o Fault_unit_test
   - ./Fault_unit_test
+  - size Fault_unit_test
