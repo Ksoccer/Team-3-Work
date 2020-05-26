@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdbool.h>
 #include "Faults.h"
-
+#include <stdlib.h>
 void swap(int *xp, int *yp) 
 { 
     int temp = *xp; 
