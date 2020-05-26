@@ -8,7 +8,7 @@ int end;
 int x
 
 //searches a sorted array for int x
-int searchtree (SearchArray[], beginning, end, x){
+int binarysearch (SearchArray[], beginning, end, x){
 	while (beginning <= end){
 	//identifies the middle of the array
 		int middle = beginning + (end - beginning) / 2;
