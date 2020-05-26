@@ -32,13 +32,13 @@ void bubbleSort(int arr[], int n)
 } 
 
 // A function to implement bubble sort 
-void bubbleSort_heap(int arr[], int n){ 
+void bubbleSort_Heap(int arr[], int n){ 
     
  
  printf("Before Sorting of array: \n"); 
  printArray(arr, n);	
  bubbleSort(arr, n); 
- printf("After BubbleSort array: \n"); 
+ printf("After BubbleSort using Heap array: \n"); 
  printArray(arr, n);
     
 }
