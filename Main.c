@@ -82,15 +82,15 @@ int main()
  }*/
 	
 	 
-/*
 
-int heapsize
+/*
+int heapsize = 10;
 printf ("enter the size of the array: ");
-scanf ("%d" &heapsize);
+//scanf ("%d" &heapsize);
 HeapSearch = (int*) malloc (heapsize*sizeof(int));
 
-
 */
+
  /*************** Bubble Sort ***************************/	
  int arr1[] = {33, 11, 22, 77, 66, 44, 55}; 
 int n = sizeof(arr1)/sizeof(arr1[0]); 
