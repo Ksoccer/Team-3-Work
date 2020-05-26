@@ -22,13 +22,13 @@
 #include "Faults.h"
 
 /* Function to print an array */
-/*void printArray(int arr[], int size) 
+void printArray(int arr[], int size) 
 { 
     int i; 
     for (i=0; i < size; i++) 
         printf("%d ", arr[i]); 
     printf("\n"); 
-} */
+} 
 
 
 
@@ -102,10 +102,10 @@ HeapSearch = (int*) malloc (heapsize*sizeof(int));
   }
  }
  /*************** Bubble Sort ***************************/	
- /*int arr[] = {64, 34, 25, 12, 22, 11, 90}; 
+ int arr[] = {64, 34, 25, 12, 22, 11, 90}; 
  int n = sizeof(arr)/sizeof(arr[0]); 
  bubbleSort(arr, n); 
  printf("bubbleSort array: \n"); 
- printArray(arr, n); */	
+ printArray(arr, n);
  return 0;
 }
