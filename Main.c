@@ -90,5 +90,11 @@ HeapSearch = (int*) malloc (heapsize*sizeof(int));
     printf("OF Fault");
   }
  }
-  return 0;
+ /*************** Bubble Sort ***************************/	
+ /*int arr[] = {64, 34, 25, 12, 22, 11, 90}; 
+ int n = sizeof(arr)/sizeof(arr[0]); 
+ bubbleSort(arr, n); 
+ printf("bubbleSort array: \n"); 
+ printArray(arr, n); */	
+ return 0;
 }
