@@ -23,13 +23,13 @@ Main - trip a Bool value for the fault
 
 Header - Faults.h
 
-Robert Furlong - over voltage
+Robert Furlong - over voltage. Binary Search
 
-Tae Kim - under current
+Tae Kim - under current. Insertion Sort
 
-Kyle Jernigan - over current 
+Kyle Jernigan - over current. Selection Sort
 
-Subhakanta Swain - under voltage
+Subhakanta Swain - under voltage. Bubble Sort
 
 Sambasivarao G - over freq.
 
