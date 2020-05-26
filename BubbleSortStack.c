@@ -1,4 +1,6 @@
 #include<stdio.h>
+#include<stdbool.h>
+#include "Faults.h"
 
 void swap(int *xp, int *yp) 
 { 
