@@ -18,7 +18,7 @@ bool OverFrequency(float Frequency, int time);
 bool UnderFrequency(float Frequency, int time);
 bool OverCurrent(float current, int time);  
 bool OVerVoltage(float voltage, int time);
-void bubbleSort_Stack(int arr[])
+void bubbleSort_Stack(int arr[]);
 
 //int binarysearch ();
 //int Heapsearch ();
