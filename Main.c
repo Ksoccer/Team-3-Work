@@ -105,5 +105,6 @@ for(int p=0;p<n;p++)
 }
 //calling bubbleSort_Stack function using Dynamic(heap) memory values
 bubbleSort_Heap(arr, n);
+free(arr);
  return 0;
 }
