@@ -32,9 +32,9 @@ void bubbleSort(int arr[], int n)
 } 
 
 // A function to implement bubble sort 
-void bubbleSort_Stack(int arr[]) 
-{ 
-
+void bubbleSort_Stack(){ 
+    
+ int arr[] = {33, 11, 22, 77, 66, 44, 55}; 
  int n = sizeof(arr)/sizeof(arr[0]); 
  printf("Before Sorting of array: \n"); 
  printArray(arr, n);	
