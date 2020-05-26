@@ -18,3 +18,7 @@ bool OverFrequency(float Frequency, int time);
 bool UnderFrequency(float Frequency, int time);
 bool OverCurrent(float current, int time);  
 bool OVerVoltage(float voltage, int time);
+/*
+int binarysearch ();
+int Heapsearch ();
+*?
