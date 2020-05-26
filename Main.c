@@ -103,7 +103,7 @@ arr = (int*) malloc (7*sizeof(int));
 *(arr + 4) = 66;
 *(arr + 5) = 44;
 *(arr + 6) = 55;
-int n = sizeof(*arr)/sizeof(int); 
+int n = sizeof(*(arr+0))/sizeof(int); 
  bubbleSort_Stack(arr, n);
  return 0;
 }
