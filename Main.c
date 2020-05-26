@@ -92,20 +92,21 @@ HeapSearch = (int*) malloc (heapsize*sizeof(int));
 
 */
  /*************** Bubble Sort ***************************/	
- //int arr[] = {33, 11, 22, 77, 66, 44, 55}; 
-//int n = sizeof(arr)/sizeof(arr[0]); 
+ int arr[] = {33, 11, 22, 77, 66, 44, 55}; 
+int n = sizeof(arr)/sizeof(arr[0]); 
+bubbleSort_Stack(arr, n);
+	
 int *arr;
 arr = (int*) malloc (7*sizeof(int));
-*(arr + 0) = 33;
-*(arr + 1) = 11;
-*(arr + 2) = 22;
-*(arr + 3) = 77;
-*(arr + 4) = 66;
-*(arr + 5) = 44;
-*(arr + 6) = 55;
+*(arr + 0) = 99;
+*(arr + 1) = 1;
+*(arr + 2) = 62;
+*(arr + 3) = 85;
+*(arr + 4) = 92;
+*(arr + 5) = 6;
+*(arr + 6) = 67;
 //int n = sizeof(*(arr+0))/sizeof(int); 
 
- bubbleSort_Stack(arr, 7);
-bubbleSort_Heap(arr,7);
+bubbleSort_Stack(arr,7);
  return 0;
 }
