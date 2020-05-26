@@ -30,8 +30,6 @@ void printArray(int arr[], int size)
     printf("\n"); 
 } 
 
-
-
 int main()
 {
   float Current,Voltage,Frequency;
@@ -104,9 +102,10 @@ HeapSearch = (int*) malloc (heapsize*sizeof(int));
 */
  /*************** Bubble Sort ***************************/	
  int arr[] = {64, 34, 25, 12, 22, 11, 90}; 
+ printf("Before Sorting of array: \n"); 
  int n = sizeof(arr)/sizeof(arr[0]); 
  bubbleSort(arr, n); 
- printf("bubbleSort array: \n"); 
+ printf("After BubbleSort array: \n"); 
  printArray(arr, n);
  return 0;
 }
