@@ -38,7 +38,7 @@ int main()
   int time=0;
   bool OverCurrentFault,OverVoltageFault,UnderCurrentFault,UnderVoltageFault,OverFrequencyFault,UnderFrequencyFault;
   
-  printf("Enter Current");
+  /*printf("Enter Current");
   scanf("%f",&Current);
   printf("Enter Voltage");
   scanf("%f",&Voltage);
@@ -67,18 +67,8 @@ int main()
   UnderFrequencyFault = UnderFrequency(Frequency,time);
  // OverFrequencyFault = OverFrequency(Frequency,time);
   //UnderCurrentFault = UnderCurrent(Current,time);
-  /*OverCurrentFault = Over_Current(Current, time);*/
+  OverCurrentFault = Over_Current(Current, time);
   //OverVoltageFault = OverVoltage(voltage, time);
-	 
-/*
-
-int heapsize
-printf ("enter the size of the array: ");
-scanf ("%d" &heapsize);
-HeapSearch = (int*) malloc (heapsize*sizeof(int));
-
-
-*/
 	 
   if(OverCurrentFault)
   {	
@@ -100,7 +90,18 @@ HeapSearch = (int*) malloc (heapsize*sizeof(int));
   {	
     printf("OF Fault");
   }
- }
+ }*/
+	
+	 
+/*
+
+int heapsize
+printf ("enter the size of the array: ");
+scanf ("%d" &heapsize);
+HeapSearch = (int*) malloc (heapsize*sizeof(int));
+
+
+*/
  /*************** Bubble Sort ***************************/	
  int arr[] = {64, 34, 25, 12, 22, 11, 90}; 
  int n = sizeof(arr)/sizeof(arr[0]); 
