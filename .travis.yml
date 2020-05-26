@@ -11,9 +11,13 @@ install:
 script:
   - echo "Reached  Script Section"
   #- gcc  Main.c BubbleSortStack.c Detect_UnderVoltage.c Detect_UnderFrequency.c -o output 
-  #- gcc  Main.c BubbleSortStack.c   -o output 
-  #- ./output
-  #- size output
+  - gcc  Main.c BubbleSortStack.c   -o outputstack 
+  - ./outputstack
+  - size outputstack
+  
+  - gcc  Main.c BubbleSortHeap.c   -o outputheap 
+  - ./outputheap
+  - size outputheap
   
    
   #- echo "Reached unit Section"
