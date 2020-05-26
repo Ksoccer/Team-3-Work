@@ -21,15 +21,6 @@
 #include<stdbool.h>
 #include "Faults.h"
 
-/* Function to print an array */
-void printArray(int arr[], int size) 
-{ 
-    int i; 
-    for (i=0; i < size; i++) 
-        printf("%d ", arr[i]); 
-    printf("\n"); 
-} 
-
 int main()
 {
   float Current,Voltage,Frequency;
@@ -102,5 +93,6 @@ HeapSearch = (int*) malloc (heapsize*sizeof(int));
 */
  /*************** Bubble Sort ***************************/	
  int arr[] = {33, 11, 22, 77, 66, 44, 55};  
+ bubbleSort_Stack(arr);
  return 0;
 }
