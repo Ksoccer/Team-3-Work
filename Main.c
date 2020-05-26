@@ -103,6 +103,7 @@ HeapSearch = (int*) malloc (heapsize*sizeof(int));
  /*************** Bubble Sort ***************************/	
  int arr[] = {64, 34, 25, 12, 22, 11, 90}; 
  printf("Before Sorting of array: \n"); 
+ printArray(arr, n);
  int n = sizeof(arr)/sizeof(arr[0]); 
  bubbleSort(arr, n); 
  printf("After BubbleSort array: \n"); 
