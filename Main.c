@@ -59,6 +59,16 @@ int main()
   /*OverCurrentFault = Over_Current(Current, time);*/
   //OverVoltageFault = OverVoltage(voltage, time);
 	 
+/*
+
+int heapsize
+printf ("enter the size of the array: ");
+scanf ("%d" &heapsize);
+HeapSearch = (int*) malloc (heapsize*sizeof(int));
+
+
+*/
+	 
   if(OverCurrentFault)
   {	
     printf("OC Fault");
