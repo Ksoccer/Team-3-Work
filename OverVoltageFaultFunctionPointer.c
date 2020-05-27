@@ -21,7 +21,7 @@ bool *Fpoint;
 
 int time;
 float voltage;
-
+bool *Fpoint;
 
 bool OverVoltage(voltage, time){
 	if (voltage > K_OV_MAX && time == 20){
