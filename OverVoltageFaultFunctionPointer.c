@@ -24,7 +24,7 @@ bool *Fpoint;
 //bool *Fpoint;
 int pointers(){
 
-	//printf("Address stored in Function pointer variable: %d\n", Fpoint );
+	printf("Address stored in Function pointer variable: %p\n", Fpoint );
 	printf("value stored in funtion pointer variable %d\n", *Fpoint)
 	
 }
