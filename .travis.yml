@@ -11,14 +11,10 @@ install:
 script:
   - echo "Reached  Script Section"
   #- gcc  Main.c BubbleSortStack.c Detect_UnderVoltage.c Detect_UnderFrequency.c -o output 
-  - gcc  Main.c BubbleSortStack.c   -o outputstack 
-  - ./outputstack
-  - size outputstack
-  
-  - gcc  Main.c BubbleSortHeap.c   -o outputheap 
-  - ./outputheap
-  - size outputheap
-  
+  - gcc  Main.c BubbleSortStack.c  BubbleSortHeap.c -o output 
+  - ./output
+  - size output
+
    
   #- echo "Reached unit Section"
   #- gcc  -I CUnit/Headers CUnit/Sources/Framework/*.c CUnit/Sources/Basic/Basic.c Detect_UnderVoltage.c Detect_UnderFrequency.c Run_cunit.c -o Fault_unit_test
