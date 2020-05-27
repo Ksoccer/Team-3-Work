@@ -29,13 +29,16 @@ int pointers(){
 	
 }
 bool OverVoltage(voltage, time){
+	
+	Fpoint = &OverVoltage();
+	
 	if (voltage > K_OV_MAX && time == 20){
 		return 1;
 	}
 	else {
 		return 0;
 	}
-	Fpoint = &OverVoltage();
+	
 }
 
 
