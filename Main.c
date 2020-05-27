@@ -97,7 +97,7 @@ int n = sizeof(arr1)/sizeof(arr1[0]);
 //calling bubbleSort_Stack function using stack memory values
 bubbleSort_Stack(arr1, n);
 	
-int *arr;
+/*int *arr;
 arr = (int*) malloc (n*sizeof(int));
 for(int p=0;p<n;p++)
 {
@@ -105,6 +105,6 @@ for(int p=0;p<n;p++)
 }
 //calling bubbleSort_Stack function using Dynamic(heap) memory values
 bubbleSort_Heap(arr, n);
-free(arr);
+free(arr);*/
  return 0;
 }
