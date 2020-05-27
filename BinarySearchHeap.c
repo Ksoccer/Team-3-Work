@@ -2,13 +2,10 @@
 #include <stdlib>
 #include "Faults.h"
 
-int *HeapArray
-int HeapBiginning;
-int HeapEnd;
-int y;
+
 
 //searches a sorted array for int y
-int HeapSearch (*HeapArray, HeapBeginning, HeapEnd, y){
+int HeapSearch (int *HeapArray, int HeapBeginning, int HeapEnd, int y){
 	while (HeapBeginning <= HeapEnd){
 	//identifies the middle of the array
 		int HeapMiddle = HeapBeginning + (HeapEnd - HeapBeginning) / 2;
