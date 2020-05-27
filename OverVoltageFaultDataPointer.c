@@ -24,8 +24,8 @@ float *Vpoint;
 
 int pointers(){
 	
- 	printf("Address stored in time pointer variable: %x\n", Tpoint );
-	printf("Address stored in voltage pointer variable: %x\n", Vpoint );
+ 	printf("Address stored in time pointer variable: %d\n", Tpoint );
+	printf("Address stored in voltage pointer variable: %d\n", Vpoint );
 	printf("Value stored in time pointer variable: %d\n", *Tpoint );
 	printf("Value stored in voltage pointer variable: %d\n", *Vpoint );
 	return 0;
