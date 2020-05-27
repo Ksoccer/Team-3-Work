@@ -25,6 +25,6 @@ script:
   #- size Fault_unit_test
   
   #- gcc  Detect_UnderVoltage.c Detect_UnderFrequency.c Run_cunit.c -o Fault_unit_test -lcunit
-  - gcc  OverVoltageFaultDataPointer.c -o Fault_unit_test -lcunit
+  - gcc  OverVoltageFaultDataPointer.c Run_cunit.c -o Fault_unit_test -lcunit
   - ./Fault_unit_test
   - size Fault_unit_test
