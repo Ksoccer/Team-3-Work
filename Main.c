@@ -82,6 +82,7 @@ int main()
  }*/
 	
 /***************** Binary Search **********************/
+// uncomment this set of code and the relating code in the .travis.yml to build
 /*
 int FaultArray[] = {33, 45, 46, 51, 60, 67, 71, 80, 88};
 int beginning = FaultArray[0];
@@ -89,13 +90,21 @@ int end = FaultArray [sizeof (FaultArray) / sizeof (FaultArray[0])];
 int middle  = FaultArray[end/2];
 int x = 45
 int binarysearch(FalutArray, beginning, end, x)
-int heapsize = 10;
-HeapArray = (int*) malloc (heapsize*sizeof(int));
-
+int heapsize = 11;
+int *HeapArray = (int*) malloc (heapsize*sizeof(int));
+int array[] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110};
+for (int i = 0; i < heapsize; i++){
+*(HeapArray + i) = array [i];
+}
+int HeapBeginning  = *(HeapArray + 0);
+int HeapEnd = *(HeapArray + sizeof(*(HeapArray))/sizeof(*(HeapArray + 0)));
+int HeapMiddle  = *(HeapArray + HeapEnd/2);
+BinarySearchHeap(HeapArray, HeapBeginning, HeapEnd, y);
+free(HeapArray);
 */
 
  /*************** Bubble Sort ***************************/	
-int arr1[] = {33, 11, 22, 77, 66, 44, 55}; 
+/*int arr1[] = {33, 11, 22, 77, 66, 44, 55}; 
 int n = sizeof(arr1)/sizeof(arr1[0]); 
 //calling bubbleSort_Stack function using stack memory values
 bubbleSort_Stack(arr1, n);
@@ -113,3 +122,4 @@ bubbleSort_Heap(arr, n1);
 free(arr);
  return 0;
 }
+*/
