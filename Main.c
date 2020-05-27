@@ -83,7 +83,7 @@ int main()
 	
 /***************** Binary Search **********************/
 // uncomment this set of code and the relating code in the .travis.yml to build
-
+/*
 int FaultArray[] = {33, 45, 46, 51, 60, 67, 71, 80, 88};
 int beginning = FaultArray[0];
 int end = FaultArray [sizeof (FaultArray) / sizeof (FaultArray[0])];
@@ -99,9 +99,9 @@ for (int i = 0; i < heapsize; i++){
 int HeapBeginning  = *(HeapArray + 0);
 int HeapEnd = *(HeapArray + sizeof(*(HeapArray))/sizeof(*(HeapArray + 0)));
 int HeapMiddle  = *(HeapArray + HeapEnd/2);
-//BinarySearchHeap(HeapArray, HeapBeginning, HeapEnd, y); //Y Not defined
-//free(HeapArray);
-
+BinarySearchHeap(HeapArray, HeapBeginning, HeapEnd, y);
+free(HeapArray);
+*/
 
  /*************** Bubble Sort ***************************/	
 /*int arr1[] = {33, 11, 22, 77, 66, 44, 55}; 
