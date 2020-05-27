@@ -88,7 +88,7 @@ int FaultArray[] = {33, 45, 46, 51, 60, 67, 71, 80, 88};
 int beginning = FaultArray[0];
 int end = FaultArray [sizeof (FaultArray) / sizeof (FaultArray[0])];
 int middle  = FaultArray[end/2];
-int x = 45
+int x = 45;
 int binarysearch(FalutArray, beginning, end, x);
 int heapsize = 11;
 int *HeapArray = (int*) malloc (heapsize*sizeof(int));
@@ -99,8 +99,8 @@ for (int i = 0; i < heapsize; i++){
 int HeapBeginning  = *(HeapArray + 0);
 int HeapEnd = *(HeapArray + sizeof(*(HeapArray))/sizeof(*(HeapArray + 0)));
 int HeapMiddle  = *(HeapArray + HeapEnd/2);
-BinarySearchHeap(HeapArray, HeapBeginning, HeapEnd, y);
-free(HeapArray);
+//BinarySearchHeap(HeapArray, HeapBeginning, HeapEnd, y); //Y Not defined
+//free(HeapArray);
 
 
  /*************** Bubble Sort ***************************/	
