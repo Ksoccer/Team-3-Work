@@ -28,19 +28,20 @@ int pointers(){
 	//printf("Address stored in voltage pointer variable: %d\n", Vpoint );
 	printf("Value stored in time pointer variable: %d\n", *Tpoint );
 	printf("Value stored in voltage pointer variable: %f\n", *Vpoint );
-	return 0;
+	return 1;
 }
 
 bool OverVoltage(float voltage,int time){
+	Tpoint = &time;
+	Vpoint = &voltage;
+	pointers();
 	if (voltage > K_OV_MAX && time == 20){
 		return 1;
 	}
 	else {
 		return 0;
 	}
-	Tpoint = &time;
-	Vpoint = &voltage;
-	pointers();
+	
 	
 }
 
