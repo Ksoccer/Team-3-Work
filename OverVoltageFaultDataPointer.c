@@ -19,8 +19,8 @@ int *Tpoint;
 float *Vpoint;
 
 
-int time;
-float voltage;
+//int time;
+//float voltage;
 
 int pointers(){
 	
