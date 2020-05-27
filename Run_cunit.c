@@ -2,7 +2,7 @@
 #include <CUnit/Basic.h>
 #include "Faults.h"
 
-void test_UnderVoltage(void)
+ void test_UnderVoltage(void)
 {  
     /********************************
      TC1
@@ -26,7 +26,7 @@ void test_UnderVoltage(void)
      Output: False  
     
     *********************************/
-    CU_ASSERT(UnderVoltage(4.0,19) == 0);
+    CU_ASSERT(UnderVoltage(4.0,19) == 0); 
 }
 void test_UnderFrequency(void)
 {
@@ -72,13 +72,13 @@ void test_OverVoltage(void)
 int main()
 {
     CU_initialize_registry();
-     /*CU_pSuite suite = CU_add_suite("test_UnderVoltage", 0, 0);
+     CU_pSuite suite = CU_add_suite("test_UnderVoltage", 0, 0);
 
     CU_add_test(suite, "test_UnderVoltage", test_UnderVoltage);
 	
 	CU_pSuite suite2 = CU_add_suite("test_UnderFrequency", 0, 0);
 
-    CU_add_test(suite2, "test_UnderFrequency", test_UnderFrequency); */
+    CU_add_test(suite2, "test_UnderFrequency", test_UnderFrequency); 
 	
 	/*CU_pSuite suite3 = CU_add_suite("test_OverCurrent", 0, 0);
 
