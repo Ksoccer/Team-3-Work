@@ -17,7 +17,7 @@ case that set time being 20 seconds
 
 int *Tpoint;
 float *Vpoint;
-bool *Fpoint;
+
 
 int time;
 float voltage;
@@ -34,13 +34,9 @@ bool OverVoltage(voltage, time){
 	}
 }
 
-Fpoint = &OverVoltage();
 
 int pointers(){
 	
  	printf("Address stored in time pointer variable: %x\n", Tpoint );
 	printf("Address stored in voltage pointer variable: %x\n", Vpoint );
-	printf("Address stored in Function pointer variable: %x\n", Fpoint );
-	
-	
 }
