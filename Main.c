@@ -57,7 +57,7 @@ int main()
  // OverFrequencyFault = OverFrequency(Frequency,time);
   //UnderCurrentFault = UnderCurrent(Current,time);
   //OverCurrentFault = Over_Current(Current, time);
-  OverVoltageFault = OverVoltage(voltage, time);
+  OverVoltageFault = OverVoltage(Voltage, time);
 	 
   if(OverCurrentFault)
   {	
