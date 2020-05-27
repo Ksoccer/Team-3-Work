@@ -8,13 +8,13 @@
  *
  ********************************************************************************
  *
- * Author(s): Nithin Kumar KV
+ * Author(s): Nithin Kumar KV, Robert Furlong
  *
  ********************************************************************************
  * Description:
  *
  * To detect Fault like OV,UV,OC,UC,UFrequency,OverFrequency
- *
+ * And to run data structure algorithims using both the heap and stack
  *
  ********************************************************************************/
 #include<stdio.h>
@@ -81,13 +81,16 @@ int main()
   }
  }*/
 	
-	 
-
+/***************** Binary Search **********************/
 /*
+int FaultArray[] = {33, 45, 46, 51, 60, 67, 71, 80, 88};
+int beginning = FaultArray[0];
+int end = FaultArray [sizeof (FaultArray) / sizeof (FaultArray[0])];
+int middle  = FaultArray[end/2];
+int x = 45
+int binarysearch(FalutArray, beginning, end, x)
 int heapsize = 10;
-printf ("enter the size of the array: ");
-//scanf ("%d" &heapsize);
-HeapSearch = (int*) malloc (heapsize*sizeof(int));
+HeapArray = (int*) malloc (heapsize*sizeof(int));
 
 */
 
