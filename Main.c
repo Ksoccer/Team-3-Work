@@ -36,7 +36,7 @@ int main()
   printf("Enter time");
   scanf("%d",&time); */
   //Invoke fault functions
- while(1)
+ /*while(1)
  {	 
   if(time < 20)
   {
@@ -51,7 +51,7 @@ int main()
 	  UnderVoltageFault = 0;
 	  OverFrequencyFault = 0;
 	  UnderFrequencyFault = 0;
-  }
+  } */
   //UnderVoltageFault = UnderVoltage(Voltage,time);
   //UnderFrequencyFault = UnderFrequency(Frequency,time);
  // OverFrequencyFault = OverFrequency(Frequency,time);
@@ -79,7 +79,7 @@ int main()
   {	
     printf("OF Fault");
   }
- }
+ //}
 	
 /***************** Binary Search **********************/
 // uncomment this set of code and the relating code in the .travis.yml to build
