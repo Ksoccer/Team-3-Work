@@ -2,13 +2,9 @@
 #include <stdlib>
 #include "Faults.h"
 
-int FaultArray [];
-int beginning;
-int end;
-int x
 
 //searches a sorted array for int x
-int binarysearch (FaultArray[], beginning, end, x){
+int binarysearch (int FaultArray[], int beginning, int end, int x){
 	while (beginning <= end){
 	//identifies the middle of the array
 		int middle = beginning + (end - beginning) / 2;
