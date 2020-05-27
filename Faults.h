@@ -17,7 +17,7 @@ bool UnderCurrent(float current,int time);
 bool OverFrequency(float Frequency, int time);
 bool UnderFrequency(float Frequency, int time);
 bool OverCurrent(float current, int time);  
-bool OVerVoltage(float voltage, int time);
+bool OverVoltage(float voltage, int time);
 void bubbleSort_Stack(int arr[], int n);
 void bubbleSort_Heap(int arr[], int n);
 int HeapSearch (int *HeapArray, int HeapBeginning, int HeapEnd, int y);
