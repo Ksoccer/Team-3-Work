@@ -15,8 +15,8 @@ case that set time being 20 seconds
 #include <stdio.h>
 #include "Faults.h"
 
-int *Tpoint;
-float *Vpoint;
+//int *Tpoint;
+//float *Vpoint;
 bool *Fpoint;
 
 int time;
