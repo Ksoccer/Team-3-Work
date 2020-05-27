@@ -31,7 +31,7 @@ int pointers(){
 	return 0;
 }
 
-bool OverVoltage(voltage, time){
+bool OverVoltage(float voltage,int time){
 	if (voltage > K_OV_MAX && time == 20){
 		return 1;
 	}
