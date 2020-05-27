@@ -22,7 +22,12 @@ bool *Fpoint;
 //int time;
 //float voltage;
 //bool *Fpoint;
+int pointers(){
 
+	//printf("Address stored in Function pointer variable: %d\n", Fpoint );
+	printf("value stored in funtion pointer variable %d\n", *Fpoint)
+	
+}
 bool OverVoltage(voltage, time){
 	if (voltage > K_OV_MAX && time == 20){
 		return 1;
@@ -30,13 +35,9 @@ bool OverVoltage(voltage, time){
 	else {
 		return 0;
 	}
+	Fpoint = &OverVoltage();
 }
 
-Fpoint = &OverVoltage();
 
-int pointers(){
 
-	printf("Address stored in Function pointer variable: %x\n", Fpoint );
-	
-	
-}
+
