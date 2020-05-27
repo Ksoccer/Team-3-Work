@@ -15,8 +15,8 @@ script:
   #- gcc Main.c BinarySearchHeap.c BinarySearchStack.c -o output
   #-  gcc Main.c OverVoltageFaultDataPointer.c OverVoltageFaultFunctionPointer.c -o output
   -  gcc Main.c OverVoltageFaultDataPointer.c -o output
-  - ./output
-  - size output
+ # - ./output
+  #- size output
 
    
   #- echo "Reached unit Section"
@@ -25,5 +25,6 @@ script:
   #- size Fault_unit_test
   
   #- gcc  Detect_UnderVoltage.c Detect_UnderFrequency.c Run_cunit.c -o Fault_unit_test -lcunit
-  #- ./Fault_unit_test
-  #- size Fault_unit_test
+  - gcc  OverVoltageFaultDataPointer.c -o Fault_unit_test -lcunit
+  - ./Fault_unit_test
+  - size Fault_unit_test
