@@ -25,7 +25,7 @@ int main()
 {
   float Current,Voltage,Frequency;
   int time=0;
-  bool OverCurrentFault,OverVoltageFault,UnderCurrentFault,UnderVoltageFault,OverFrequencyFault,UnderFrequencyFault;
+ bool OverCurrentFault,OverVoltageFault,UnderCurrentFault,UnderVoltageFault,OverFrequencyFault,UnderFrequencyFault;
   
   /*printf("Enter Current");
   scanf("%f",&Current);
@@ -34,7 +34,7 @@ int main()
   printf("Enter Frequency");
   scanf("%f",&Frequency);
   printf("Enter time");
-  scanf("%d",&time);
+  scanf("%d",&time); */
   //Invoke fault functions
  while(1)
  {	 
@@ -57,7 +57,7 @@ int main()
  // OverFrequencyFault = OverFrequency(Frequency,time);
   //UnderCurrentFault = UnderCurrent(Current,time);
   OverCurrentFault = Over_Current(Current, time);
-  //OverVoltageFault = OverVoltage(voltage, time);
+  OverVoltageFault = OverVoltage(voltage, time);
 	 
   if(OverCurrentFault)
   {	
@@ -79,7 +79,7 @@ int main()
   {	
     printf("OF Fault");
   }
- }*/
+ }
 	
 /***************** Binary Search **********************/
 // uncomment this set of code and the relating code in the .travis.yml to build
