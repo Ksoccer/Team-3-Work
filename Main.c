@@ -57,9 +57,9 @@ int main()
  // OverFrequencyFault = OverFrequency(Frequency,time);
   //UnderCurrentFault = UnderCurrent(Current,time);
   //OverCurrentFault = Over_Current(Current, time);
-  OverVoltageFault = OverVoltage(Voltage, time);
+ // OverVoltageFault = OverVoltage(Voltage, time);
 	 
-  if(OverCurrentFault)
+ /* if(OverCurrentFault)
   {	
     printf("OC Fault");
   }
@@ -80,7 +80,7 @@ int main()
     printf("OF Fault");
   }
  //}
-	
+	*/
 /***************** Binary Search **********************/
 // uncomment this set of code and the relating code in the .travis.yml to build
 	
