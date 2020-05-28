@@ -100,6 +100,7 @@ int HeapBeginning  = *(HeapArray + 0);
 int HeapEnd = *(HeapArray + sizeof(*(HeapArray))/sizeof(*(HeapArray + 0)));
 int HeapMiddle  = *(HeapArray + HeapEnd/2);
 BinarySearchHeap(HeapArray, HeapBeginning, HeapEnd, y);
+
 free(HeapArray);
 
 
