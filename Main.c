@@ -120,7 +120,7 @@ for(int p=0;p<n1;p++)
 }
 //calling bubbleSort_Stack function using Dynamic(heap) memory values
 bubbleSort_Heap(arr, n1);
-free(arr); 
+free(arr);*/ 
  return 0;
 }
-*/
+
