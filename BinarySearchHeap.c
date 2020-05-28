@@ -6,6 +6,7 @@
 
 //searches a sorted array for int y
 int HeapSearch (int *HeapArray, int HeapBeginning, int HeapEnd, int y){
+	int HeapMiddle
 	while (HeapBeginning <= HeapEnd){
 	//checks if int is the middle integer in the array
 		if (y == *(HeapArray + HeapMiddle)){
