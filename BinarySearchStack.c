@@ -5,6 +5,7 @@
 
 //searches a sorted array for int x
 int binarysearch (int FaultArray[], int beginning, int end, int x){
+	int middle;
 	while (beginning <= end){
 	//checks if int is the middle integer in the array
 		if (FaultArray [middle == x]){
