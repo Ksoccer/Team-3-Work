@@ -1,5 +1,5 @@
-#include <stdio>
-#include <stdlib>
+#include <stdio.h>
+#include <stdlib.h>
 #include "Faults.h"
 
 
