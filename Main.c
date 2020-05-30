@@ -105,7 +105,7 @@ free(HeapArray);
 */
 
  /*************** Bubble Sort ***************************/	
-/*int arr1[] = {33, 11, 22, 77, 66, 44, 55}; 
+int arr1[] = {33, 11, 22, 77, 66, 44, 55}; 
 int n = sizeof(arr1)/sizeof(arr1[0]); 
 //calling bubbleSort_Stack function using stack memory values
 bubbleSort_Stack(arr1, n);
@@ -120,7 +120,7 @@ for(int p=0;p<n1;p++)
 }
 //calling bubbleSort_Stack function using Dynamic(heap) memory values
 bubbleSort_Heap(arr, n1);
-free(arr);*/ 
+free(arr);
  return 0;
 }
 
