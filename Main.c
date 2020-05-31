@@ -126,7 +126,7 @@ free(arr);
 
 /******************* Selection Sort ********************/
 
-int arrky[] = {2, 98, 56, 57, 12, 87, 24}; 
+/*int arrky[] = {2, 98, 56, 57, 12, 87, 24}; 
 int l = sizeof(arrky)/sizeof(arrky[0]); 
 //Selection Sort Stack function call
 SelectionSortStack(arrky, l);
@@ -143,4 +143,4 @@ for(int p=0;p<p2;p++)
 SelectionSortHeap(arr2, p2);
 free(arr2);
  return 0;
-}
+}*/
