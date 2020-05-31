@@ -1,9 +1,33 @@
 #include <stdio.h>
 #include <stdbool.h>
+#include "Faults.h"
+#include <stdlib.h>
+
 
 #define MAX 7
 
-int intArray[MAX] = {4,6,3,2,1,9,7};
+
+//int intArray[MAX] = {4,6,3,2,1,9,7};
+//Fucntion for pointers practice 
+void newmgen(int *pm, int *pl)
+{ 
+    int temp = *pm; 
+    *pm = *pl; 
+    *pl = temp; 
+} 
+
+*******************************************************
+// crates the new matrix stored in Stack
+
+void printArray(int arrn[], int size) 
+{ 
+    int i; 
+    for (i=0; i < size; i++) 
+        printf("%d ", arrn[i]); 
+    printf("\n"); 
+} 
+
+*****************************************************
 
 void printline(int count) {
    int i;
