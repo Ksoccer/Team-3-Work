@@ -20,6 +20,8 @@ bool OverCurrent(float current, int time);
 bool OverVoltage(float Voltage, int time);
 void bubbleSort_Stack(int arr[], int n);
 void bubbleSort_Heap(int arr[], int n);
+void SelectionSortHeap(int arr[], int n);
+void SelectionSortStack(int arr[], int n);
 int HeapSearch (int *HeapArray, int HeapBeginning, int HeapEnd, int y);
 int binarysearch (int FaultArray[], int beginning, int end, int x);
 void insertionSort_Stack(int arr[], int n);
