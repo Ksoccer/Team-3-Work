@@ -1,10 +1,18 @@
 #include <stdio.h>
 #include <stdbool.h>
+#include "Faults.h"
+#include <stdlib.h>
 
-#define MAX 7
+//#define MAX 7
 
-int intArray[MAX] = {4,6,3,2,1,9,7};
+//function to do selection sort using heap
 
+
+void SelectionSort_Heap (int intArray[], int count){
+
+//int intArray[MAX] = {4,6,3,2,1,9,7};
+int MAX = 7;
+	
 void printline(int count) {
    int i;
 	
@@ -65,4 +73,5 @@ void main() {
    printf("Output Array: ");
    display();
    printline(50);
+}
 }
