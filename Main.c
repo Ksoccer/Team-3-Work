@@ -19,6 +19,7 @@
  ********************************************************************************/
 #include<stdio.h>
 #include<stdbool.h>
+#include <pthread.h>
 #include "Faults.h"
 
 int main()
@@ -101,6 +102,11 @@ int HeapBeginning  = *(HeapArray + 0);
 int HeapEnd = *(HeapArray + sizeof(*(HeapArray))/sizeof(*(HeapArray + 0)));
 int HeapMiddle  = *(HeapArray + HeapEnd/2);
 int BinarySearchHeap(HeapArray, HeapBeginning, HeapEnd, y);
+//threading the binary search heap function
+pthread_t thr1;
+pthread_create (&thr1, NULL, BinarySearchHeap(HeapArray, HeapBeginning, HeapEnd, y));
+pthread_join (thr1, NULL);
+pthread_exit (NULL);
 free(HeapArray);
 */
 
