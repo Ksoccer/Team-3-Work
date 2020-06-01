@@ -101,12 +101,12 @@ for (int i = 0; i < heapsize; i++){
 int HeapBeginning  = *(HeapArray + 0);
 int HeapEnd = *(HeapArray + sizeof(*(HeapArray))/sizeof(*(HeapArray + 0)));
 int HeapMiddle  = *(HeapArray + HeapEnd/2);
-int HeapSearch(int *HeapArray, int HeapBeginning, int HeapEnd, int y);
+int *HeapSearch(int *HeapArray, int HeapBeginning, int HeapEnd, int y);
 //threading the binary search heap function
 pthread_t thr1, thr2, thr3;
-pthread_create(&thr1, NULL, HeapSearch(HeapArray, HeapBeginning, HeapEnd, y), NULL);
-//pthread_create (&thr2, NULL, BinarySearchHeap(HeapArray, HeapBeginning, HeapEnd, y), int);
-//pthread_create (&thr3, NULL, BinarySearchHeap(HeapArray, HeapBeginning, HeapEnd, y), int);
+pthread_create(&thr1, NULL, HeapSearch(HeapArray, HeapBeginning, HeapEnd, y), "A");
+//pthread_create (&thr2, NULL, BinarySearchHeap(HeapArray, HeapBeginning, HeapEnd, y), "B");
+//pthread_create (&thr3, NULL, BinarySearchHeap(HeapArray, HeapBeginning, HeapEnd, y), "C");
 pthread_join(thr1, NULL);
 //pthread_join (thr2, NULL);
 //pthread_join (thr3, NULL);
