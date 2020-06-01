@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include<stdbool.h>
+#include <pthread.h>
 
 //Threshold for Min/Max for detecting faults
 //User can edit this for their application purposes
