@@ -133,14 +133,14 @@ SelectionSortStack(arrky, l);
 
 int arrky2[] = {210, 98, 5, 301, 986, 1, 632}; 
 int p2 = sizeof(arrky2)/sizeof(arrky2[0]); 
-int *arr2;
-arr2 = (int*) malloc (p2*sizeof(int));
+int *arrt2;
+arrt2 = (int*) malloc (p2*sizeof(int));
 for(int p=0;p<p2;p++)
 {
-*(arr2 + p) = arrky2[p];
+*(arrt2 + p) = arrky2[p];
 }
-//calling bubbleSort_Stack function using Dynamic(heap) memory values
-SelectionSortHeap(arr2, p2);
+//calling SelectionSort with a matrix stored in heap
+SelectionSortHeap(arrt2, p2);
 free(arr2);
  return 0;
 }*/
