@@ -13,7 +13,7 @@ script:
   # - gcc  Main.c BubbleSortStack.c Detect_UnderVoltage.c Detect_UnderFrequency.c -o output 
  # - gcc  Main.c BubbleSortStack.c BubbleSortHeap.c  -o output 
   # - gcc  Main.c SelectionSortStack.c SelectionSortHeap.c  -o output 
-  - gcc Main.c BinarySearchHeap.c BinarySearchStack.c -o output
+  - gcc Main.c BinarySearchHeap.c BinarySearchStack.c -o output - pthread
   # -  gcc Main.c OverVoltageFaultDataPointer.c OverVoltageFaultFunctionPointer.c -o output
   # -  gcc Main.c OverVoltageFaultDataPointer.c -o output
   
