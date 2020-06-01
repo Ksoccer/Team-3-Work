@@ -104,7 +104,7 @@ int HeapMiddle  = *(HeapArray + HeapEnd/2);
 int BinarySearchHeap(int HeapArray, int HeapBeginning, int HeapEnd, int y);
 //threading the binary search heap function
 pthread_t thr1, thr2, thr3;
-pthread_create (&thr1, NULL, BinarySearchHeap(HeapArray, HeapBeginning, HeapEnd, y), int);
+pthread_create (&thr1, NULL, BinarySearchHeap(HeapArray, HeapBeginning, HeapEnd, y), NULL);
 //pthread_create (&thr2, NULL, BinarySearchHeap(HeapArray, HeapBeginning, HeapEnd, y), int);
 //pthread_create (&thr3, NULL, BinarySearchHeap(HeapArray, HeapBeginning, HeapEnd, y), int);
 pthread_join (thr1, NULL);
