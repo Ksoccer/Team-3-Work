@@ -105,12 +105,12 @@ int BinarySearchHeap(HeapArray, HeapBeginning, HeapEnd, y);
 //threading the binary search heap function
 pthread_t thr1, thr2, thr3;
 pthread_create (&thr1, NULL, BinarySearchHeap(HeapArray, HeapBeginning, HeapEnd, y), int);
-pthread_create (&thr2, NULL, BinarySearchHeap(HeapArray, HeapBeginning, HeapEnd, y), int);
-pthread_create (&thr3, NULL, BinarySearchHeap(HeapArray, HeapBeginning, HeapEnd, y), int);
+//pthread_create (&thr2, NULL, BinarySearchHeap(HeapArray, HeapBeginning, HeapEnd, y), int);
+//pthread_create (&thr3, NULL, BinarySearchHeap(HeapArray, HeapBeginning, HeapEnd, y), int);
 pthread_join (thr1, NULL);
-pthread_join (thr2, NULL);
-pthread_join (thr3, NULL);
-pthread_exit (NULL);
+//pthread_join (thr2, NULL);
+//pthread_join (thr3, NULL);
+//pthread_exit (NULL);
 free(HeapArray);
 
 
