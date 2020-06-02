@@ -102,7 +102,7 @@ int HeapBeginning  = *(HeapArray + 0);
 int HeapEnd = *(HeapArray + sizeof(*(HeapArray))/sizeof(*(HeapArray + 0)));
 int HeapMiddle = *(HeapArray + HeapEnd/2);
 int HeapSearch(int *HeapArray, int HeapBeginning, int HeapEnd, int y);
-int *threadsearch = int HeapSearch(int *HeapArray, int HeapBeginning, int HeapEnd, int y);
+int *threadsearch = HeapSearch(int *HeapArray, int HeapBeginning, int HeapEnd, int y);
 //threading the binary search heap function
 pthread_t thr1, thr2, thr3;
 pthread_create(&thr1, NULL, threadsearch, NULL);
