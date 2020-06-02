@@ -111,7 +111,7 @@ pthread_create(&thr1, NULL, threadsearch, NULL);
 pthread_join(thr1, NULL);
 //pthread_join (thr2, NULL);
 //pthread_join (thr3, NULL);
-//pthread_exit (NULL);
+pthread_exit (NULL);
 free(HeapArray);
 
  /*************** Bubble Sort ***************************/	
