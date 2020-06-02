@@ -7,14 +7,17 @@
 #define MAX 7
 
 
-//int intArray[MAX] = {4,6,3,2,1,9,7};
 //Fucntion for pointers practice 
 void newmgen(int *pm, int *pl)
 { 
-    int temp = *pm; 
-    *pm = *pl; 
-    *pl = temp;
-	printf("location of pm is %d", temp);
+    int temp = *pm; //stores location of variable pm 
+    int temp1 = *pl;  //stores location of pl
+	int k;
+	k = 9;
+	pl = &k; //updates the location of variable pl to the value of k, which is 9
+	printf("location of pm is %d\n", temp);
+	printf(" old location of pl is %d\n", temp1);
+	printf("new location of pl is %d\n", pl);
 } 
 
 *******************************************************
