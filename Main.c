@@ -92,7 +92,7 @@ int middle  = FaultArray[end/2];
 int x = 45;
 int binarysearch(int FalutArray [], int beginning, int end, int x);
 int heapsize = 11;
-*HeapArray = (int*) malloc (heapsize*sizeof(int));
+void *HeapArray = (int*) malloc (heapsize*sizeof(int));
 int array[] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110};
 int y = 10;
 for (int i = 0; i <= heapsize; i++){
@@ -105,7 +105,7 @@ int HeapSearch(int *HeapArray, int HeapBeginning, int HeapEnd, int y);
 int *threadsearch = HeapSearch(*HeapArray, HeapBeginning, HeapEnd, y);
 //threading the binary search heap function
 pthread_t thr1, thr2, thr3;
-pthread_create(&thr1, NULL, threadsearch, NULL);
+pthread_create(&thr1, NULL, threadsearch, int);
 //pthread_create (&thr2, NULL, threadsearch, "B");
 //pthread_create (&thr3, NULL, threadsearch, "C");
 pthread_join(thr1, NULL);
