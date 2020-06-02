@@ -3,7 +3,7 @@
 #include <pthread.h>
 #include "Faults.h"
 
-//void *ptrheap;
+int *ptrheap;
 
 //searches a sorted array for int y
 int *HeapSearch (int *HeapArray, int HeapBeginning, int HeapEnd, int y){
@@ -13,7 +13,6 @@ int *HeapSearch (int *HeapArray, int HeapBeginning, int HeapEnd, int y){
 		if (y == *(HeapArray + HeapMiddle)){
 		
 			printf("the value %d is in the array", HeapMiddle);
-			return 1;
 			
 		}
 		//checks if the int y is in the end half of the array
@@ -29,9 +28,8 @@ int *HeapSearch (int *HeapArray, int HeapBeginning, int HeapEnd, int y){
 		
 		}
 	} 
-	//ptrheap = &HeapArray;
+	ptrheap = &HeapMiddle;
 	//if int y is not in the array
 	printf("the value is not in the array");
-	//return ptrheap;
-	return 0;
+	return ptrheap;
 }
