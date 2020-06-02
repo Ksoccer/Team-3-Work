@@ -13,7 +13,8 @@ void newmgen(int *pm, int *pl)
 { 
     int temp = *pm; 
     *pm = *pl; 
-    *pl = temp; 
+    *pl = temp;
+	printf("location of pm is %d", temp);
 } 
 
 *******************************************************
