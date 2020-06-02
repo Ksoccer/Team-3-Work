@@ -91,9 +91,11 @@ int end = FaultArray [sizeof (FaultArray) / sizeof (FaultArray[0])];
 int middle  = FaultArray[end/2];
 int x = 45;
 int binarysearch(int FalutArray [], int beginning, int end, int x);*/
-int heapsize = 10;
-int *HeapArray = (int*) malloc (heapsize*sizeof(int));
+//int heapsize = 10;
+
 int array[] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110};
+int heapsize = sizeof(array)/sizeof(array[0]);
+int *HeapArray = (int*) malloc (heapsize*sizeof(int));
 int y = 10;
 for (int i = 0; i <= heapsize; i++){
 	*(HeapArray + i) = array [i];
@@ -102,16 +104,16 @@ int HeapBeginning  = *(HeapArray + 0);
 int HeapEnd = *(HeapArray + sizeof(*(HeapArray))/sizeof(*(HeapArray + 0)));
 int HeapMiddle = *(HeapArray + HeapEnd/2);
 //void *HeapSearch(int *HeapArray, int HeapBeginning, int HeapEnd, int y);
-//void *threadsearch = HeapSearch(HeapArray, HeapBeginning, HeapEnd, y);
+void *threadsearch = HeapSearch(HeapArray, HeapBeginning, HeapEnd, y);
 //threading the binary search heap function
-/*pthread_t thr1, thr2, thr3;
+pthread_t thr1, thr2, thr3;
 pthread_create(&thr1, NULL, threadsearch, "A");
 //pthread_create (&thr2, NULL, threadsearch, "B");
 //pthread_create (&thr3, NULL, threadsearch, "C");
 pthread_join(thr1, NULL);
 //pthread_join (thr2, NULL);
 //pthread_join (thr3, NULL);
-pthread_exit (NULL);*/
+pthread_exit (NULL);
 free(HeapArray);
 
  /*************** Bubble Sort ***************************/	
