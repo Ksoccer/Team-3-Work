@@ -55,7 +55,7 @@ void display() {
    printf("]\n");
 }
 
-void selectionSort() {
+void SelectionSortStack() {
    int indexMin,i,j;
 	
    // loop through all numbers 
