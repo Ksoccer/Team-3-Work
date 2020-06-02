@@ -7,7 +7,7 @@ void *ptrheap;
 
 //searches a sorted array for int y
 void *HeapSearch (int *HeapArray, int HeapBeginning, int HeapEnd, int y){
-	int HeapMiddle;
+	int HeapMiddle = *(HeapArray + HeapEnd/2);
 	while (HeapBeginning <= HeapEnd){
 	//checks if int is the middle integer in the array
 		if (y == *(HeapArray + HeapMiddle)){
