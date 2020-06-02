@@ -9,9 +9,6 @@
 
 
 void SelectionSort_Heap (int intArray[], int count){
-
-//int intArray[MAX] = {4,6,3,2,1,9,7};
-
 	
 void printline(int count) {
    int i;
