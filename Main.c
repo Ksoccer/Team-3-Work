@@ -99,8 +99,8 @@ int y = 10;
 //threading the binary search heap function
 /*pthread_t thr1, thr2, thr3;
 pthread_create(&thr1, NULL, threadsearch, "10");
-//pthread_create (&thr2, NULL, threadsearch, 30);
-//pthread_create (&thr3, NULL, threadsearch, "C");
+//pthread_create (&thr2, NULL, threadsearch, "30");
+//pthread_create (&thr3, NULL, threadsearch, "100");
 pthread_join(thr1, NULL);
 //pthread_join (thr2, NULL);
 //pthread_join (thr3, NULL);
