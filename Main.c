@@ -145,6 +145,6 @@ for(int p=0;p<p2;p++)
 }
 //calling SelectionSort with a matrix stored in heap
 SelectionSortHeap(arrt2, p2);
-free(arr2);
+free(arrt2);
  return 0;
 }*/
