@@ -6,7 +6,15 @@
 void *ptrheap;
 
 //searches a sorted array for int y
-void *HeapSearch (int *HeapArray, int HeapBeginning, int HeapEnd, int y){
+void *HeapSearch (int y){
+	int array[] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110};
+	int heapsize = sizeof(array)/sizeof(array[0]);
+	int *HeapArray = (int*) malloc (heapsize*sizeof(int));
+	for (int i = 0; i <= heapsize; i++){
+		*(HeapArray + i) = array [i];
+	}
+	int HeapBeginning  = *(HeapArray + 0);
+	int HeapEnd = *(HeapArray + sizeof(*(HeapArray))/sizeof(*(HeapArray + 0)));
 	int HeapMiddle = *(HeapArray + HeapEnd/2);
 	while (HeapBeginning <= HeapEnd){
 	//checks if int is the middle integer in the array
