@@ -3,10 +3,10 @@
 #include <pthread.h>
 #include "Faults.h"
 
-int *ptrheap;
+void *ptrheap;
 
 //searches a sorted array for int y
-int *HeapSearch (int *HeapArray, int HeapBeginning, int HeapEnd, int y){
+void *HeapSearch (int *HeapArray, int HeapBeginning, int HeapEnd, int y){
 	int HeapMiddle;
 	while (HeapBeginning <= HeapEnd){
 	//checks if int is the middle integer in the array
