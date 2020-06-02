@@ -102,7 +102,6 @@ for (int i = 0; i <= heapsize; i++){
 }
 int HeapBeginning  = *(HeapArray + 0);
 int HeapEnd = *(HeapArray + sizeof(*(HeapArray))/sizeof(*(HeapArray + 0)));
-int HeapMiddle = *(HeapArray + HeapEnd/2);
 //void *HeapSearch(int *HeapArray, int HeapBeginning, int HeapEnd, int y);
 void *threadsearch = HeapSearch(HeapArray, HeapBeginning, HeapEnd, y);
 //threading the binary search heap function
