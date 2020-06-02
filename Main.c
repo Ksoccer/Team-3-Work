@@ -104,14 +104,14 @@ int HeapMiddle = *(HeapArray + HeapEnd/2);
 //void *HeapSearch(int *HeapArray, int HeapBeginning, int HeapEnd, int y);
 void *threadsearch = HeapSearch(HeapArray, HeapBeginning, HeapEnd, y);
 //threading the binary search heap function
-pthread_t thr1, thr2, thr3;
+/*pthread_t thr1, thr2, thr3;
 pthread_create(&thr1, NULL, threadsearch, "A");
 //pthread_create (&thr2, NULL, threadsearch, "B");
 //pthread_create (&thr3, NULL, threadsearch, "C");
 pthread_join(thr1, NULL);
 //pthread_join (thr2, NULL);
 //pthread_join (thr3, NULL);
-pthread_exit (NULL);
+pthread_exit (NULL);*/
 free(HeapArray);
 
  /*************** Bubble Sort ***************************/	
