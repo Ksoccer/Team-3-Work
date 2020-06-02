@@ -98,9 +98,9 @@ int y = 10;
 for (int i = 0; i < heapsize; i++){
 int *(HeapArray + i) = array [i];
 }
-int HeapBeginning  = int *(HeapArray + 0);
-int HeapEnd = int *(HeapArray + sizeof(*(HeapArray))/sizeof(*(HeapArray + 0)));
-int HeapMiddle  = int *(HeapArray + HeapEnd/2);
+int HeapBeginning  = *(HeapArray + 0);
+int HeapEnd = *(HeapArray + sizeof(*(HeapArray))/sizeof(*(HeapArray + 0)));
+int HeapMiddle = *(HeapArray + HeapEnd/2);
 int HeapSearch(int *HeapArray, int HeapBeginning, int HeapEnd, int y);
 int *threadsearch = int HeapSearch(int *HeapArray, int HeapBeginning, int HeapEnd, int y);
 //threading the binary search heap function
