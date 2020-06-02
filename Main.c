@@ -93,7 +93,7 @@ int x = 45;
 int binarysearch(int FalutArray [], int beginning, int end, int x);*/
 //int heapsize = 10;
 
-
+int y = 0;
 //void *HeapSearch(int *HeapArray, int HeapBeginning, int HeapEnd, int y);
 void *threadsearch = HeapSearch(y);
 //threading the binary search heap function
@@ -105,7 +105,7 @@ pthread_join(thr1, NULL);
 //pthread_join (thr2, NULL);
 //pthread_join (thr3, NULL);
 pthread_exit (NULL);
-free(HeapArray);
+
 
  /*************** Bubble Sort ***************************/	
 /*int arr1[] = {33, 11, 22, 77, 66, 44, 55}; 
