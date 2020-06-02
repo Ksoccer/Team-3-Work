@@ -139,7 +139,7 @@ int arrky2[] = {210, 98, 5, 301, 986, 1, 632};
 int p2 = sizeof(arrky2)/sizeof(arrky2[0]); 
 int *arrt2;
 arrt2 = (int*) malloc (p2*sizeof(int));
-for(int p=0;p<p2;p++)
+for(int p=0, p<p2, p++)
 {
 *(arrt2 + p) = arrky2[p];
 }
