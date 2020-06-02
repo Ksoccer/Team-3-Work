@@ -39,5 +39,6 @@ void *HeapSearch (int y){
 	ptrheap = &HeapMiddle;
 	//if int y is not in the array
 	printf("the value is not in the array");
+	free(HeapArray);
 	return ptrheap;
 }
