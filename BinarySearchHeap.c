@@ -22,7 +22,7 @@ void *HeapSearch (int y){
 		
 			printf("the value %d is in the array", HeapMiddle);
 			free(HeapArray);
-			return;
+			return ptrheap;
 		}
 		//checks if the int y is in the end half of the array
 		else if (y > *(HeapArray + HeapMiddle) ){
