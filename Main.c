@@ -93,9 +93,9 @@ int x = 45;
 int binarysearch(int FalutArray [], int beginning, int end, int x);*/
 //int heapsize = 10;
 
-int y = 0;
+//int y = 0;
 //void *HeapSearch(int *HeapArray, int HeapBeginning, int HeapEnd, int y);
-void *threadsearch = HeapSearch(y);
+void *threadsearch = HeapSearch(void *y);
 //threading the binary search heap function
 pthread_t thr1, thr2, thr3;
 pthread_create(&thr1, NULL, threadsearch, 10);
