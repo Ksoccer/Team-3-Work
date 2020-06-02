@@ -84,7 +84,7 @@ int main()
 	*/
 /***************** Binary Search **********************/
 // uncomment this set of code and the relating code in the .travis.yml to build
-/*	
+	
 int FaultArray[] = {33, 45, 46, 51, 60, 67, 71, 80, 88};
 int beginning = FaultArray[0];
 int end = FaultArray [sizeof (FaultArray) / sizeof (FaultArray[0])];
@@ -97,15 +97,15 @@ int y = 10;
 //void *HeapSearch(int *HeapArray, int HeapBeginning, int HeapEnd, int y);
 /*void *threadsearch =*/ HeapSearch(y);
 //threading the binary search heap function
-/*pthread_t thr1, thr2, thr3;
+pthread_t thr1, thr2, thr3;
 pthread_create(&thr1, NULL, threadsearch, "10");
-//pthread_create (&thr2, NULL, threadsearch, "30");
-//pthread_create (&thr3, NULL, threadsearch, "100");
+pthread_create (&thr2, NULL, threadsearch, "30");
+pthread_create (&thr3, NULL, threadsearch, "100");
 pthread_join(thr1, NULL);
-//pthread_join (thr2, NULL);
-//pthread_join (thr3, NULL);
+pthread_join (thr2, NULL);
+pthread_join (thr3, NULL);
 pthread_exit (NULL);
-*/
+
 
  /*************** Bubble Sort ***************************/	
 /*int arr1[] = {33, 11, 22, 77, 66, 44, 55}; 
