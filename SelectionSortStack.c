@@ -22,7 +22,7 @@ void newmgen(int *pm, int *pl)
 
 *******************************************************
 // crates the new matrix stored in Stack
-
+/*
 void printArray(int arrn[], int size) 
 { 
     int i; 
@@ -30,7 +30,7 @@ void printArray(int arrn[], int size)
         printf("%d ", arrn[i]); 
     printf("\n"); 
 } 
-
+*/
 *****************************************************
 
 void printline(int count) {
