@@ -92,11 +92,11 @@ int middle  = FaultArray[end/2];
 int x = 45;
 int binarysearch(int FalutArray [], int beginning, int end, int x);
 int heapsize = 11;
-int HeapArray = (int*) malloc (heapsize*sizeof(int));
+int *HeapArray = (int*) malloc (heapsize*sizeof(int));
 int array[] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110};
 int y = 10;
-for (int i = 0; i < heapsize; i++){
-int *(HeapArray + i) = array [i];
+for (int i = 0; i <= heapsize; i++){
+	*(HeapArray + i) = array [i];
 }
 int HeapBeginning  = *(HeapArray + 0);
 int HeapEnd = *(HeapArray + sizeof(*(HeapArray))/sizeof(*(HeapArray + 0)));
