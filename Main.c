@@ -93,15 +93,7 @@ int x = 45;
 int binarysearch(int FalutArray [], int beginning, int end, int x);*/
 //int heapsize = 10;
 
-int array[] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110};
-int heapsize = sizeof(array)/sizeof(array[0]);
-int *HeapArray = (int*) malloc (heapsize*sizeof(int));
-int y;
-for (int i = 0; i <= heapsize; i++){
-	*(HeapArray + i) = array [i];
-}
-int HeapBeginning  = *(HeapArray + 0);
-int HeapEnd = *(HeapArray + sizeof(*(HeapArray))/sizeof(*(HeapArray + 0)));
+
 //void *HeapSearch(int *HeapArray, int HeapBeginning, int HeapEnd, int y);
 void *threadsearch = HeapSearch(HeapArray, HeapBeginning, HeapEnd, y);
 //threading the binary search heap function
